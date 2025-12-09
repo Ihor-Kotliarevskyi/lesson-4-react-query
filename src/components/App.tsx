@@ -1,9 +1,9 @@
-import "./App.module.css";
+import OrderForm from "./OrderForm";
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <OrderForm />
     </>
   );
 }
