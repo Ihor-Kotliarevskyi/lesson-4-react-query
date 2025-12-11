@@ -1,38 +1,38 @@
 import { useId } from "react";
 import { Formik, Form, Field } from "formik";
-import css from "./OrderForm.module.css";
+import styles from "./OrderForm.module.css";
 
 export default function OrderForm() {
   const fieldId = useId();
 
   return (
     <Formik initialValues={{}} onSubmit={() => {}}>
-      <Form className={css.form}>
-        <fieldset className={css.fieldset}>
-          <legend className={css.legend}>Client Info</legend>
+      <Form className={styles.form}>
+        <fieldset className={styles.fieldset}>
+          <legend className={styles.legend}>Client Info</legend>
 
-          <label className={css.label} htmlFor={`${fieldId}-username`}>
+          <label className={styles.label} htmlFor={`${fieldId}-username`}>
             Name
           </label>
           <Field
-            className={css.field}
+            className={styles.field}
             type="text"
             name="username"
             id={`${fieldId}-username`}
           />
 
-          <label className={css.label} htmlFor={`${fieldId}-email`}>
+          <label className={styles.label} htmlFor={`${fieldId}-email`}>
             Email
           </label>
           <Field
-            className={css.field}
+            className={styles.field}
             type="email"
             name="email"
             id={`${fieldId}-email`}
           />
         </fieldset>
 
-        <button className={css.btn} type="submit">
+        <button className={styles.btn} type="submit">
           Place order
         </button>
       </Form>
