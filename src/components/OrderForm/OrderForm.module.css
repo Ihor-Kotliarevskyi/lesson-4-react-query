@@ -1,52 +1,72 @@
 .form {
-  max-width: 420px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 24px;
-  background-color: #fff;
-  border-radius: 8px;
   border: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
 .fieldset {
+  margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 }
 
 .legend {
   font-weight: bold;
-  font-size: 18px;
+  margin-bottom: 8px;
 }
 
-.label {
-  font-weight: 500;
-}
-
-.field {
+.input {
+  display: block;
   width: 100%;
-  padding: 8px 12px;
+  padding: 8px;
+  margin-bottom: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.btn {
-  padding: 10px 16px;
-  background-color: #007bff;
-  color: #fff;
+.textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
   font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 8px;
+  box-sizing: border-box;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+.radioLabel,
+.checkboxLabel {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1565c0;
+}
+
+.error {
+  display: block;
+  color: #e53935;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
 }
